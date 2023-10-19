@@ -12,6 +12,6 @@ for(i=0;i<arr.length-3;i++){
 			}
 		}
 	}
-	return output;
+	return ans;
 }
 module.exports = threeSum;
