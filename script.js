@@ -8,7 +8,7 @@ for(i=0;i<arr.length;i++){
     }
     sum=sum-arr[i];
 	let c=Math.abs(sum-target);
-	if(c<diff){
+	if(c>diff){
 		output=sum;
 	}
 }
