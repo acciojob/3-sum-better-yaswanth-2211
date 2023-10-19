@@ -7,19 +7,10 @@ for(i=0;i<arr.length;i++){
         sum=sum+arr[j];
     }
     sum=sum-arr[i];
-	let c=0;
-	if(sum<0){
-		c=-(target-sum);
+	let c=math.abs(sum-target);
+	if(c<diff){
+		output=sum;
 	}
-	else{
-		c=target-sum;
-		
-	}
-    if(c<diff){
-        diff=c;
-        output=sum;
-    }
-    
 }
 return output;
 }
