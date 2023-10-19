@@ -1,6 +1,18 @@
 function threeSum(arr, target) {
-// write your code here
-  
+let diff=target
+let output=0
+for(i=0;i<arr.length;i++){
+    let sum=0;
+    for(j=0;j<arr.length;j++){
+        sum=sum+arr[j];
+    }
+    sum=sum-arr[i];
+    if(target-sum<diff){
+        diff=target-sum;
+        output=sum;
+    }
+    
 }
-
+return output;
+}
 module.exports = threeSum;
