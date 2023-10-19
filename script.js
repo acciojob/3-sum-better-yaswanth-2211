@@ -1,5 +1,5 @@
 function threeSum(arr, target) {
-let diff=target
+let diff=10000
 let output=0
 for(i=0;i<arr.length;i++){
     let sum=0;
