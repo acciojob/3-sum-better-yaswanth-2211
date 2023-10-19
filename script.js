@@ -6,7 +6,7 @@ for(i=0;i<arr.length-3;i++){
 		for(k=j+1;k<arr.length-1;k++){
 				let sum=arr[i]+arr[j]+arr[k];
 				let c=Math.abs(sum-target);
-				if(initialdiff){
+				if(initialdiff>diff){
 					ans=sum;
 						}
 			}
