@@ -7,8 +7,16 @@ for(i=0;i<arr.length;i++){
         sum=sum+arr[j];
     }
     sum=sum-arr[i];
-    if(target-sum<diff){
-        diff=target-sum;
+	let c=0;
+	if(sum<0){
+		c=-(target-sum);
+	}
+	else{
+		c=target-sum;
+		
+	}
+    if(c<diff){
+        diff=c;
         output=sum;
     }
     
